@@ -38,6 +38,7 @@ body {
   transition: 0.2s ease;
   box-shadow: 5px 5px 5px rgba(164, 164, 164, 0.43);
   transition: 0.2s ease;
+  display: flexbox;
   
 }
 

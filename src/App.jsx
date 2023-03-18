@@ -55,13 +55,15 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <h3>✂️ ChatGPT Document Parser </h3>
+        <h3>✂️ ChatGPT Document Parser</h3>
         <h4>Upload a .txt file then click parse to break file it into chunks under 2K characters.</h4>
-
-        <input type="file" onChange={handleFileUpload} />
-        {file && <button onClick={parseFile}>Parse File</button>}
-        {file && <button onClick={reloadPage}>Reload App</button>}
-
+        <div className='input'>
+          <input type="file" onChange={handleFileUpload} />
+            {file && <button className='parse' onClick={parseFile}>🔪 Parse</button>}
+        </div>
+        <div className='buttons'>
+        {file && <button className='reload' onClick={reloadPage}>♻ Reload App</button>}
+        </div>
         
       </div>
       <div className="grid-container">
